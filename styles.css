@@ -1,0 +1,156 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+    font-family: Gotham Rounded, sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(to right, hsl(270, 100%, 80%),hsl(220, 100%, 70%));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+  }
+  p{
+    background-color: #d4aaff;
+    display:flexbox;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    margin: 0;
+    height: 15px;
+    width: 60px;
+  }
+  
+  .clock {
+    width: 390px;
+    height: 390px;
+    background-color: rgba(255, 255, 255);
+    border-radius: 50%;
+    border: 7px solid black;
+    position: relative;
+  }
+  
+  .clock .number {
+    --rotation: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transform: rotate(var(--rotation));
+    font-size: 2.1rem;
+  }
+  .clock .notch{
+    --rotation:0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transform: rotate(var(--rotation));
+    font-size: 0.8rem;
+  }
+  .clock .notch1 { --rotation: 6deg; }
+  .clock .notch2{ --rotation: 12deg;}
+  .clock .notch3{ --rotation: 18deg;}
+  .clock .notch4{ --rotation: 24deg;}
+  .clock .notch5 { --rotation: 30deg; }
+  .clock .notch6{ --rotation: 36deg;}
+  .clock .notch7{ --rotation: 42deg;}
+  .clock .notch8{ --rotation: 48deg;}
+  .clock .notch9 { --rotation: 54deg; }
+  .clock .notch10{ --rotation: 60deg;}
+  .clock .notch11{ --rotation: 66deg;}
+  .clock .notch12{ --rotation: 72deg;}
+  .clock .notch13 { --rotation: 78deg; }
+  .clock .notch14{ --rotation: 84deg;}
+  .clock .notch15{ --rotation: 90deg;}
+  .clock .notch16{ --rotation: 96deg;}
+  .clock .notch17 { --rotation: 102deg; }
+  .clock .notch18{ --rotation: 108deg;}
+  .clock .notch19{ --rotation: 114deg;}
+  .clock .notch20{ --rotation: 120deg;}
+  .clock .notch21 { --rotation: 126deg; }
+  .clock .notch22{ --rotation: 132deg;}
+  .clock .notch23{ --rotation: 138deg;}
+  .clock .notch24{ --rotation: 144deg;}
+  .clock .notch25 { --rotation: 150deg; }
+  .clock .notch26{ --rotation: 156deg;}
+  .clock .notch27{ --rotation: 162deg;}
+  .clock .notch28{ --rotation: 168deg;}
+  .clock .notch29 { --rotation: 174deg; }
+  .clock .notch30{ --rotation: 180deg;}
+  .clock .notch31{ --rotation: 186deg;}
+  .clock .notch32{ --rotation: 192deg;}
+  .clock .notch33 { --rotation: 198deg; }
+  .clock .notch34{ --rotation: 204deg;}
+  .clock .notch35{ --rotation: 210deg;}
+  .clock .notch36{ --rotation: 216deg;}
+  .clock .notch37 { --rotation: 222deg; }
+  .clock .notch38{ --rotation: 228deg;}
+  .clock .notch39{ --rotation: 234deg;}
+  .clock .notch40{ --rotation: 240deg;}
+  .clock .notch41 { --rotation: 246deg; }
+  .clock .notch42{ --rotation: 252deg;}
+  .clock .notch43{ --rotation: 258deg;}
+  .clock .notch44{ --rotation: 264deg;}
+  .clock .notch45 { --rotation: 270deg; }
+  .clock .notch46{ --rotation: 276deg;}
+  .clock .notch47{ --rotation: 282deg;}
+  .clock .notch48{ --rotation: 288deg;}
+  .clock .notch49{ --rotation: 294deg;}
+  .clock .notch50{ --rotation: 300deg;}
+  .clock .notch51 { --rotation: 306deg; }
+  .clock .notch52{ --rotation: 312deg;}
+  .clock .notch53{ --rotation: 318deg;}
+  .clock .notch54{ --rotation: 324deg;}
+  .clock .notch55{ --rotation: 330deg;}
+  .clock .notch56{ --rotation: 336deg;}
+  .clock .notch57 { --rotation: 342deg; }
+  .clock .notch58{ --rotation: 348deg;}
+  .clock .notch59{ --rotation: 354deg;}
+  .clock .notch60{ --rotation: 360deg;}
+
+  
+  .clock .number1 { --rotation: 30deg; }
+  .clock .number2 { --rotation: 60deg; }
+  .clock .number3 { --rotation: 90deg; }
+  .clock .number4 { --rotation: 120deg; }
+  .clock .number5 { --rotation: 150deg; }
+  .clock .number6 { --rotation: 180deg; }
+  .clock .number7 { --rotation: 210deg; }
+  .clock .number8 { --rotation: 240deg; }
+  .clock .number9 { --rotation: 270deg; }
+  .clock .number10 { --rotation: 300deg; }
+  .clock .number11 { --rotation: 330deg; }
+  
+  .clock .hand {
+    --rotation: 0;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    border: 2px solid chocolate;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transform-origin: bottom;
+    z-index: 10;
+    transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
+  }
+  
+  .clock::after {
+    content: '';
+    position: absolute;
+    background-color: black;
+    z-index: 11;
+    width: 19px;
+    height: 19px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+  }
+  
+  .clock .hand.second {
+    width: 5px;
+    height: 43%;
+    background-color: red;
+  }

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="styles.css" rel="stylesheet">
+  <script defer src="script.js"></script>
+  <title>Zamanlayıcı</title>
+</head>
+
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7Ms XsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <div class="container" align="center">
+    <header>
+      <h1 id="content" style="margin-left: 1rem;" onclick="activateCode()">Hoşgeldiniz </h1>
+      <h2 class="greeting">
+        <div class='name' contenteditable="true"> Ufak bir ara, birazdan beraberiz. </div>
+        
+
+      
+    </header> 
+
+   
+      
+   
+    <img align="left" id="img1" src="resim1.jpg" width="300" height="300"></a> 
+    <img align="right" id="img2"src="resim2.jpg" width="300" height="300"onclick="changeimg2(event)"></a>
+    
+
+    <div class="clock">
+      <div class="hand second" data-second-hand></div>
+      <div class="number number1">5</div>
+      <div class="number number2">10</div>
+      <div class="number number3">15</div>
+      <div class="number number4">20</div>
+      <div class="number number5">25</div>
+      <div class="number number6">30</div>
+      <div class="number number7">35</div>
+      <div class="number number8">40</div>
+      <div class="number number9">45</div>
+      <div class="number number10">50</div>
+      <div class="number number11">55</div>
+      <div class="number number12">0</div>
+
+      <div class="notch notch1">|</div>
+      <div class="notch notch2">|</div>
+      <div class="notch notch3">|</div>
+      <div class="notch notch4">|</div>
+      <div class="notch notch5">|</div>
+      <div class="notch notch6">|</div>
+      <div class="notch notch7">|</div>
+      <div class="notch notch8">|</div>
+      <div class="notch notch9">|</div>
+      <div class="notch notch10">|</div>
+      <div class="notch notch11">|</div>
+      <div class="notch notch12">|</div>
+      <div class="notch notch13">|</div>
+      <div class="notch notch14">|</div>
+      <div class="notch notch15">|</div>
+      <div class="notch notch16">|</div>
+      <div class="notch notch17">|</div>
+      <div class="notch notch18">|</div>
+      <div class="notch notch19">|</div>
+      <div class="notch notch20">|</div>
+      <div class="notch notch21">|</div>
+      <div class="notch notch22">|</div>
+      <div class="notch notch23">|</div>
+      <div class="notch notch24">|</div>
+      <div class="notch notch25">|</div>
+      <div class="notch notch26">|</div>
+      <div class="notch notch27">|</div>
+      <div class="notch notch28">|</div>
+      <div class="notch notch29">|</div>
+      <div class="notch notch30">|</div>
+      <div class="notch notch31">|</div>
+      <div class="notch notch32">|</div>
+      <div class="notch notch33">|</div>
+      <div class="notch notch34">|</div>
+      <div class="notch notch35">|</div>
+      <div class="notch notch36">|</div>
+      <div class="notch notch37">|</div>
+      <div class="notch notch38">|</div>
+      <div class="notch notch39">|</div>
+      <div class="notch notch40">|</div>
+      <div class="notch notch41">|</div>
+      <div class="notch notch42">|</div>
+      <div class="notch notch43">|</div>
+      <div class="notch notch44">|</div>
+      <div class="notch notch45">|</div>
+      <div class="notch notch46">|</div>
+      <div class="notch notch47">|</div>
+      <div class="notch notch48">|</div>
+      <div class="notch notch49">|</div>
+      <div class="notch notch50">|</div>
+      <div class="notch notch51">|</div>
+      <div class="notch notch52">|</div>
+      <div class="notch notch53">|</div>
+      <div class="notch notch54">|</div>
+      <div class="notch notch55">|</div>
+      <div class="notch notch56">|</div>
+      <div class="notch notch57">|</div>
+      <div class="notch notch58">|</div>
+      <div class="notch notch59">|</div>
+      <div class="notch notch60">|</div>
+
+    </div>
+    <div style="font-size: 50px;" id="display">
+      00:00:00
+
+    </div>
+    <div class="d-grid gap-2 d-md-block">
+      <label for="time-select">Süre seçin:</label>
+
+      <select name="hours" id="hour-select" onchange="getSelectValue();">
+        <option value="">--Saat--</option>
+        <option value="00">00</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+        <option value="18">18</option>
+        <option value="19">19</option>
+        <option value="20">20</option>
+        <option value="21">21</option>
+        <option value="22">22</option>
+        <option value="23">23</option>
+        <option value="24">24</option>
+      </select>
+      :
+      <select name="minutes" id="minute-select" onchange="getSelectValue();">
+        <option value="">--Dakika--</option>
+        <option value="00m">00</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="10">10</option>
+        <option value="15">15</option>
+        <option value="20">20</option>
+        <option value="25">25</option>
+        <option value="30">30</option>
+        <option value="35">35</option>
+        <option value="40">40</option>
+        <option value="45">45</option>
+        <option value="50">50</option>
+        <option value="55">55</option>
+
+      </select>
+      :
+      <select name="seconds" id="second-select" onchange="getSelectValue();">
+        <option value="">--Saniye--</option>
+        <option value="00s">00</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+        <option value="18">18</option>
+        <option value="19">19</option>
+        <option value="20">20</option>
+        <option value="21">21</option>
+        <option value="22">22</option>
+        <option value="23">23</option>
+        <option value="24">24</option>
+        <option value="25">25</option>
+        <option value="26">26</option>
+        <option value="27">27</option>
+        <option value="28">28</option>
+        <option value="29">29</option>
+        <option value="30">30</option>
+        <option value="31">31</option>
+        <option value="32">32</option>
+        <option value="33">33</option>
+        <option value="34">34</option>
+        <option value="35">35</option>
+        <option value="36">36</option>
+        <option value="37">37</option>
+        <option value="38">38</option>
+        <option value="39">39</option>
+        <option value="40">40</option>
+        <option value="41">41</option>
+        <option value="42">42</option>
+        <option value="43">43</option>
+        <option value="44">44</option>
+        <option value="45">45</option>
+        <option value="46">46</option>
+        <option value="47">47</option>
+        <option value="48">48</option>
+        <option value="49">49</option>
+        <option value="50">50</option>
+        <option value="51">51</option>
+        <option value="52">52</option>
+        <option value="53">53</option>
+        <option value="54">54</option>
+        <option value="55">55</option>
+        <option value="56">56</option>
+        <option value="57">57</option>
+        <option value="58">58</option>
+        <option value="59">59</option>
+
+
+      </select>
+
+      <button class="btn btn-light " id="startStop" onclick="run()">Start</button>
+      <button class="btn btn-light" id="reset" onclick="reset()">Reset</button>
+
+
+     <div>
+           <a href='https://www.google.com.tr//'> <h3> Sitemize göz atabilirsiniz.</h3> </a> 
+        
+        </div>
+
+
+</body>
+
+
+</html>
